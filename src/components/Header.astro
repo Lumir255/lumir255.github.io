@@ -3,15 +3,9 @@ interface Variable {
     user: string;
 }
 
-let title;
 
-const { user } = Astro.props;
+let title = "Lumir255";
 
-if (user === "Iron") {
-    title = "Iron Website";
-} else {
-    title = "TheCastleProgramerWebsite";
-}
 
 import Enlace from '../react/Link/Link.jsx'
 import './../css/Header.css'
@@ -21,8 +15,6 @@ import './../css/Header.css'
     <Enlace href="/../myProjects">MyProjects</Enlace>
     <Enlace href="/../myGames">MyGames</Enlace>
     <h2 id="titulo"> {title} </h2>
-    <Enlace href="https://github.com/TheCastleProgramer">Github</Enlace>
-    <Enlace href="https://thecastleprogramer.itch.io/">Itch.io</Enlace>
 </header>
 <style>
     h2 {
